@@ -30,7 +30,7 @@ interface NetworkModule {
             return OkHttpClient
                 .Builder()
                 .addInterceptor(HttpLoggingInterceptor().apply {
-                    level = if (BuildConfig.DEBUG) Level.BASIC else Level.NONE
+                    level = if (BuildConfig.DEBUG) Level.BODY else Level.NONE
                 })
                 .build()
 
