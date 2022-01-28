@@ -1,10 +1,10 @@
-package com.csi.sample.paging.domain
+package com.csi.sample.paging.data.remote
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class GithubRepo(
+data class GithubRepoDto(
     @SerialName("id") val id: Long,
     @SerialName("name") val name: String,
     @SerialName("full_name") val fullName: String,
